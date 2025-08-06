@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lottie Test</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+  <style>
+    #lottie-loading {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 200px;
+      height: 200px;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+  <div id="lottie-loading"></div>
+
+  <script>
+    lottie.loadAnimation({
+      container: document.getElementById("lottie-loading"),
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      path: "https://raw.githubusercontent.com/eyeandi-eunjin/GHL-assets/main/logo%202.json"
+    });
+  </script>
+</body>
+</html>
